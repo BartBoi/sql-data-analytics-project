@@ -1,4 +1,6 @@
 
+--Show monthly total sales, the number of unique customers, and the total units sold in that month.
+
 SELECT
 DATETRUNC(month, order_date) AS order_month,
 SUM(sales) AS total_sales,
