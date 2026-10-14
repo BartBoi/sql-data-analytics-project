@@ -1,5 +1,5 @@
 
---Find total customer by country
+--Find total customers by country
 SELECT
 country,
 COUNT(customer_key) AS total_customers
@@ -23,7 +23,7 @@ FROM gold.dim_products
 GROUP BY category
 ORDER BY total_products DESC;
 
---What is the average costs in each category?
+--What is the average cost in each category?
 SELECT
 category,
 AVG(CAST(cost AS DECIMAL(18, 2))) AS average_cost
